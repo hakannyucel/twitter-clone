@@ -30,7 +30,7 @@ const SearchFilter: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <a href={"#"} className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Advanced search</a>
+            <a href="/#" className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Advanced search</a>
         </div>
     )
 }

@@ -12,7 +12,7 @@ const WhoToFollow: React.FC = () => {
                     <FollowItem fullName='Hakan Yücel' username='@hakannyucel' />
                     <FollowItem fullName='Hakan Yücel' username='@hakannyucel' />
                 </div>
-                <a href="#" className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Show more</a>
+                <a href="/#" className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Show more</a>
             </div>
         </div>
     )
