@@ -1,6 +1,5 @@
 import React from 'react';
 import TrendItem from './TrendItem';
-import { Link } from 'react-router-dom';
 
 interface TrendsProp {
     backgroundColor?: string
@@ -17,7 +16,7 @@ const Trends: React.FC<TrendsProp> = ({backgroundColor}) => {
                     <TrendItem trend='Trending in Turkey' tag='Sabiha Gökçen' tweets='20.2k tweets' />
                     <TrendItem trend='Trending in Turkey' tag='Talisca' tweets='15k tweets' />
                 </div>
-                <Link to="#" className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Show more</Link>
+                <a href="#" className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Show more</a>
             </div>
         </div>
     )

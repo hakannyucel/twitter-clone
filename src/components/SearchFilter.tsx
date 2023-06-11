@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const SearchFilter: React.FC = () => {
     return (
@@ -31,7 +30,7 @@ const SearchFilter: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <Link to={"#"} className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Advanced search</Link>
+            <a href={"#"} className='p-3 w-full block text-blue-500 text-sm hover:bg-gray-800 transition rounded-lg rounded-t-none'>Advanced search</a>
         </div>
     )
 }
