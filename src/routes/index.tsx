@@ -8,9 +8,9 @@ const Explore = lazy(() => import("../pages/explore"));
 const AppRoutes: React.FC = () => {
     return (
         <Routes>
-            <Route path="/twitter-clone" element={<Feed />} />
-            <Route path="/twitter-clone/explore" element={<Explore />} />
-            <Route path="/twitter-clone/*" element={<PageNotFound />} />
+            <Route path="/" element={<Feed />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/*" element={<PageNotFound />} />
         </Routes>
     )
 }

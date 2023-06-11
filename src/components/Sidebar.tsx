@@ -7,13 +7,13 @@ const Sidebar: React.FC = () => {
     return (
         <div className='w-4/12 flex flex-col px-4'>
             <div>
-                <a href="/twitter-clone" className='inline-block hover:bg-gray-800 transition rounded-full p-2 m-2'>
+                <a href="/" className='inline-block hover:bg-gray-800 transition rounded-full p-2 m-2'>
                     <AiOutlineTwitter size={30} color='#ddd' />
                 </a>
             </div>
             <div className='flex flex-col'>
-                <SidebarMenuButton icon={<AiOutlineHome size={30} color='#ddd' />} link='/twitter-clone' title={"Home"} hasNotification={true} />
-                <SidebarMenuButton icon={<AiOutlineSearch size={30} color='#ddd' />} link='/twitter-clone/explore' title={"Explore"} />
+                <SidebarMenuButton icon={<AiOutlineHome size={30} color='#ddd' />} link='/' title={"Home"} hasNotification={true} />
+                <SidebarMenuButton icon={<AiOutlineSearch size={30} color='#ddd' />} link='/explore' title={"Explore"} />
                 <SidebarMenuButton icon={<AiOutlineBell size={30} color='#ddd' />} link='#' title={"Notification"} />
                 <SidebarMenuButton icon={<AiOutlineUser size={30} color='#ddd' />} link='#' title={"Profile"} />
                 <SidebarMenuButton icon={<AiOutlineEllipsis size={30} color='#ddd' />} link='#' title={"More"} />
@@ -24,7 +24,7 @@ const Sidebar: React.FC = () => {
 
             <div className='mt-3 hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer'>
                 <div>
-                    <img src="/twitter-clone/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
+                    <img src="/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
                 </div>
                 <div className='flex flex-col text-sm'>
                     <span className='font-bold'>Hakan</span>

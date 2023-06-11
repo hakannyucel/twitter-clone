@@ -10,7 +10,7 @@ const FollowItem: React.FC<FollowItemProp> = ({fullName, username}) => {
     return (
         <div className='hover:bg-gray-800 transition px-2 py-4 flex w-full items-center justify-between cursor-pointer'>
             <div className='flex space-x-4'>
-                <img src="/twitter-clone/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
+                <img src="/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
                 <div className='flex flex-col text-sm'>
                     <span className='font-bold'>{fullName}</span>
                     <span className='text-gray-500'>{username}</span>
