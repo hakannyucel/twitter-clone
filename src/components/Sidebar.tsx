@@ -5,7 +5,7 @@ import SidebarMenuButton from './SidebarMenuButton';
 const Sidebar: React.FC = () => {
 
     return (
-        <div className='w-4/12 flex flex-col px-4'>
+        <div className='w-4/12 hidden flex-col px-4 sm:flex'>
             <div>
                 <a href="/" className='inline-block hover:bg-gray-800 transition rounded-full p-2 m-2'>
                     <AiOutlineTwitter size={30} color='#ddd' />

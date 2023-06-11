@@ -8,8 +8,8 @@ const PageNotFound = lazy(() => import("../pages/notFound"));
 const AppRoutes: React.FC = () => {
     return (
         <Routes>
-            <Route path="/explore" element={<Explore />} />
             <Route path="/" element={<Feed />} />
+            <Route path="/explore" element={<Explore />} />
             <Route path="/*" element={<PageNotFound />} />
         </Routes>
     )

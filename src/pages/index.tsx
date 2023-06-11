@@ -9,9 +9,9 @@ interface LayoutProp {
 const Layout: React.FC<LayoutProp> = ({children}) => {
     return(
         <div className='w-full bg-black min-h-screen text-gray-200'>
-            <div className='flex w-8/12 m-auto'>
+            <div className='flex sm:w-8/12 m-auto'>
                 <Sidebar />
-                <div className='w-full border-x-2 border-gray-800'>
+                <div className='w-full sm:border-x-2 border-gray-800'>
                     {children}
                 </div>
                 <Toolbar />

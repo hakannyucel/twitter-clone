@@ -6,7 +6,7 @@ import WhoToFollow from './WhoToFollow';
 
 const Toolbar: React.FC = () => {
     return (
-        <div className='w-2/4 flex flex-col m-3'>
+        <div className='w-2/4 hidden sm:flex flex-col m-3'>
             <SearchFilter />
             <Trends backgroundColor='bg-gray-900' />
             <WhoToFollow />
