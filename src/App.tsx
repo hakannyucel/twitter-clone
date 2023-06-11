@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import ErrorPage from './pages/error';
 import AppRoutes from './routes';
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import SuspenseLoading from './components/SuspenseLoading';
 import Layout from './pages';
 
