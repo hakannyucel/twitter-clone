@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface SidebarMenuButtonProp {
     hasNotification?: boolean,
@@ -9,7 +10,7 @@ interface SidebarMenuButtonProp {
 
 const SidebarMenuButton: React.FC<SidebarMenuButtonProp> = ({hasNotification, icon, link, title}) => {
     return (
-        <a href={link} className='flex items-center w-full p-3 hover:bg-gray-800 transition rounded-3xl' color='#ddd'>
+        <Link to={link} className='flex items-center w-full p-3 hover:bg-gray-800 transition rounded-3xl' color='#ddd'>
             <div className='relative'>
                 {icon}
                 {hasNotification 
@@ -17,7 +18,7 @@ const SidebarMenuButton: React.FC<SidebarMenuButtonProp> = ({hasNotification, ic
                 : <></>}
             </div>
             <span className='ml-4 text-lg font-normal tracking-wider'>{title}</span>
-        </a>
+        </Link>
     )
 }
 

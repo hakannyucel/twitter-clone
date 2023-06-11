@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineEllipsis } from 'react-icons/ai';
 import ActionButtons from './ActionButtons';
+import { Link } from 'react-router-dom';
 
 interface FeedItemProp {
     fullName: string,
@@ -20,9 +21,9 @@ const FeedItem: React.FC<FeedItemProp> = ({fullName, username, content, likeCoun
             </div>
             <div className='flex flex-col space-y-1 px-2 w-full '>
                 <div className='flex justify-between items-center'>
-                    <a href="/profile">
+                    <Link to="/#">
                         <span className='font-bold text-white hover:underline transition'>{fullName}</span>  <span className='text-gray-500 text-sm'>{username}</span>
-                    </a>
+                    </Link>
                     <div className='cursor-pointer hover:bg-gray-800 transition rounded-full'><AiOutlineEllipsis size={25} color='#ddd' /></div>
                 </div>
                 <div>

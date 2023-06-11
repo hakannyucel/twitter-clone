@@ -1,15 +1,16 @@
 import React from 'react';
 import { AiOutlineBell, AiOutlineEllipsis, AiOutlineHome, AiOutlineSearch, AiOutlineTwitter, AiOutlineUser } from 'react-icons/ai';
 import SidebarMenuButton from './SidebarMenuButton';
+import { Link } from 'react-router-dom';
 
 const Sidebar: React.FC = () => {
 
     return (
         <div className='w-4/12 flex flex-col px-4'>
             <div>
-                <a href="/" className='inline-block hover:bg-gray-800 transition rounded-full p-2 m-2'>
+                <Link to="/" className='inline-block hover:bg-gray-800 transition rounded-full p-2 m-2'>
                     <AiOutlineTwitter size={30} color='#ddd' />
-                </a>
+                </Link>
             </div>
             <div className='flex flex-col'>
                 <SidebarMenuButton icon={<AiOutlineHome size={30} color='#ddd' />} link='/' title={"Home"} hasNotification={true} />
