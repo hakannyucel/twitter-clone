@@ -21,7 +21,7 @@ const SingleActionButton: React.FC<ISingleActionButton> = ({ onClick, icon, text
     }
 
     return(
-        <motion.div className='flex space-x-2 px-2 md:px-4 py-2 cursor-pointer hover:text-blue-500 hover:bg-gray-900 transition rounded-full' 
+        <motion.div className='flex space-x-2 px-2 md:px-4 py-2 cursor-pointer sm:hover:bg-gray-900 sm:active:bg-none active:bg-gray-900 hover:text-blue-500 transition rounded-full' 
             onClick={() => {
                 setIsClicked(!isClicked);
                 onClick();
