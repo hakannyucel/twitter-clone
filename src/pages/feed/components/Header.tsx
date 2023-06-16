@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineTwitter } from 'react-icons/ai';
+import HeaderSidebar from "../../../components/HeaderSidebar";
 
 const Header: React.FC = () => {
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
+
+  const openSidebar = () => {
+    setIsMobileSidebarOpen(true);
+  };
+
+  const closeSidebar = () => {
+    setIsMobileSidebarOpen(false);
+  };
   return (
     <>
       <div className="hidden sm:flex flex-col border-b-2 border-gray-800">
@@ -19,12 +29,12 @@ const Header: React.FC = () => {
         </div>
       </div>
       <div className="flex justify-between items-center p-4 sm:hidden">
-        <img src="/assets/profile.jpg" className="rounded-full" width={30} height={30} alt="" />
+        <img src="/assets/profile.jpg" className="rounded-full" width={30} height={30} alt="" onClick={openSidebar} />
         <a href="/">
           <AiOutlineTwitter color="#3c82f6" size={30} />
         </a>
-        <div></div>
       </div>
+      <HeaderSidebar isOpen={isMobileSidebarOpen} closeSidebar={closeSidebar} />
     </>
   );
 };
