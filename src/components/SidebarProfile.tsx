@@ -17,8 +17,8 @@ const SidebarProfile : React.FC = () => {
     })
 
     return (
-        <div className='relative mt-3'>
-            <div className='hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer relative' ref={menuRef} onClick={() => setIsOpen(!isOpen)}>
+        <div className='relative mt-3' ref={menuRef}>
+            <div className='hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer relative' onClick={() => setIsOpen(!isOpen)}>
                 <div>
                     <img src="/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
                 </div>
