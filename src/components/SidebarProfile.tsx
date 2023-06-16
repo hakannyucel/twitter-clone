@@ -17,15 +17,17 @@ const SidebarProfile : React.FC = () => {
     })
 
     return (
-        <div className='mt-3 hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer relative' ref={menuRef} onClick={() => setIsOpen(!isOpen)}>
-            <div>
-                <img src="/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
+        <div className='relative mt-3'>
+            <div className='hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer relative' ref={menuRef} onClick={() => setIsOpen(!isOpen)}>
+                <div>
+                    <img src="/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
+                </div>
+                <div className='flex flex-col text-sm'>
+                    <span className='font-bold'>Hakan</span>
+                    <span className='text-gray-500'>@hakanyucel</span>
+                </div>
+                <div><AiOutlineEllipsis size={25} color='#ddd' /></div>
             </div>
-            <div className='flex flex-col text-sm'>
-                <span className='font-bold'>Hakan</span>
-                <span className='text-gray-500'>@hakanyucel</span>
-            </div>
-            <div><AiOutlineEllipsis size={25} color='#ddd' /></div>
             <UserOverFlowMenu isOpen={isOpen} />
         </div>
     )
