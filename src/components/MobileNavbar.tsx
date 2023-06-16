@@ -3,7 +3,7 @@ import { AiOutlineBell, AiOutlineHome, AiOutlineSearch } from 'react-icons/ai';
 
 const MobileNavbar: React.FC = () => {
       return (
-    <nav className="fixed sm:hidden bottom-0 left-0 right-0 bg-black border-t border-t-900 shadow-lg flex justify-around p-4 select-none">
+    <nav className="fixed sm:hidden bottom-0 left-0 right-0 bg-black border-t border-t-gray-700 flex justify-around p-4 select-none">
       <a href='/' className="flex flex-col items-center">
         <AiOutlineHome size={30} color='#ddd' />
       </a>

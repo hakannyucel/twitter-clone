@@ -36,6 +36,14 @@ const Feed: React.FC = () => {
             retweetCount={1250}
             likeCount={9100}
             viewCount={1.2} />
+            <FeedItem
+            fullName='Hakan Yücel'
+            username='@hakannyucel'
+            content='Zorlayınca olmaz nasipse olur ama zorlamadan da nasip olmaz. Çünkü kader gayrete aşıktır.'
+            commentCount={9320}
+            retweetCount={4250}
+            likeCount={9520}
+            viewCount={8.1} />
         </div>
     )
 }
