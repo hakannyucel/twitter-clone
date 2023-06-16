@@ -11,7 +11,7 @@ const HeaderSidebar: React.FC<IHeaderSidebar> = ({ isOpen, closeSidebar }) => {
   return (
     <motion.div
       initial={{ x: -300 }}
-      animate={{ x: isOpen ? 0 : -300 }}
+      animate={{ x: isOpen ? 0 : -500 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
       className="block sm:hidden h-screen absolute top-0 bg-black w-3/4 border-r border-r-gray-800 p-4"
     >
