@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineHeart, AiOutlineUpload } from 'react-icons/ai';
 import { BiBarChart } from 'react-icons/bi';
 import { FaRegComment, FaRecycle } from 'react-icons/fa';
+import SingleActionButton from '../../../components/SingleActionButton';
 
 interface ActionButtonsProp {
     retweetCount: number,
@@ -14,20 +15,31 @@ const ActionButtons: React.FC<ActionButtonsProp> = (props) => {
     const [retweetCount, setRetweetCount] = useState(props.retweetCount);
     const [likeCount, setLikeCount] = useState(props.likeCount);
     const [commentCount, setCommentCount] = useState(props.commentCount);
+    const [isLiked, setIsLiked] = useState(false);
+
 
     return (
-        <div className='flex justify-around items-center text-gray-500 text-xs sm:text-base'>
-            <div className='flex space-x-2 px-2 md:px-4 py-2 cursor-pointer hover:text-blue-500 hover:bg-gray-900 transition rounded-full' onClick={() => setCommentCount(commentCount + 1)}>
-                <FaRegComment size={20} color='#ddd' className='hover:text-gray-200 transition' /> <span>{commentCount.toString()}</span>
-            </div>
+        <div className='flex justify-around items-center text-gray-500 text-xs sm:text-base select-none'>
 
-            <div className='flex space-x-2 px-2 md:px-4 py-2 cursor-pointer hover:text-blue-500 hover:bg-gray-900 transition rounded-full' onClick={() => setRetweetCount(retweetCount + 1)}>
-                <FaRecycle size={20} color='#ddd' /> <span>{retweetCount.toString()}</span>
-            </div>
+            <SingleActionButton 
+                icon={<FaRegComment size={20} color='#ddd' className='hover:text-gray-200 transition' />} 
+                onClick={() => setCommentCount(commentCount + 1)}
+                text={commentCount.toString()} />
 
-            <div className='flex space-x-2 px-2 md:px-4 py-2 cursor-pointer hover:text-blue-500 hover:bg-gray-900 transition rounded-full' onClick={() => setLikeCount(likeCount + 1)}>
-                <AiOutlineHeart size={20} color="#ddd" /> <span>{likeCount.toString()}</span>
-            </div>
+            <SingleActionButton 
+                icon={<FaRecycle size={20} color='#ddd' className='hover:text-gray-200 transition' />} 
+                onClick={() => setRetweetCount(retweetCount + 1)}
+                text={retweetCount.toString()} />
+
+            <SingleActionButton 
+                icon={<AiOutlineHeart size={20} color='#ddd' fill={isLiked ? 'red' : '#ddd'} className='hover:text-gray-200 transition' />} 
+                onClick={() => {
+                      setIsLiked(!isLiked);
+                      setLikeCount(isLiked ? likeCount - 1 : likeCount + 1)
+                    }}
+                text={likeCount.toString()} />
+
+
             <div className='hidden sm:flex space-x-2 px-4 py-2 cursor-pointer hover:text-blue-500 hover:bg-gray-900 transition rounded-full'>
                 <BiBarChart size={20} color='#ddd' /> <span>{props.viewCount.toString()}M</span>
             </div>

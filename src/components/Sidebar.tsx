@@ -4,6 +4,8 @@ import SidebarMenuButton from './SidebarMenuButton';
 
 const Sidebar: React.FC = () => {
 
+    const [isOpen, setIsOpen] = React.useState(false);
+
     return (
         <div className='w-4/12 hidden flex-col px-4 sm:flex'>
             <div>
@@ -22,7 +24,7 @@ const Sidebar: React.FC = () => {
                 <button className='py-3 px-10 bg-blue-400 rounded-3xl text-white font-bold w-full tracking-wider hover:brightness-75 transition'>Tweet</button>
             </div>
 
-            <div className='mt-3 hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer'>
+            <div className='mt-3 hover:bg-gray-800 transition rounded-full p-2 flex w-full items-center justify-between cursor-pointer relative'>
                 <div>
                     <img src="/assets/profile.jpg" alt="" width={40} height={40} className='rounded-full' />
                 </div>
@@ -30,8 +32,22 @@ const Sidebar: React.FC = () => {
                     <span className='font-bold'>Hakan</span>
                     <span className='text-gray-500'>@hakanyucel</span>
                 </div>
-                <div><AiOutlineEllipsis size={25} color='#ddd' /></div>
+                <div><AiOutlineEllipsis size={25} color='#ddd' onClick={() => setIsOpen(!isOpen)} /></div>
+                <UserOverFlowMenu isOpen={isOpen} />
             </div>
+        </div>
+    )
+}
+
+interface IUserOverFlowMenu {
+    isOpen: boolean
+}
+
+const UserOverFlowMenu: React.FC<IUserOverFlowMenu> = ({isOpen}) => {
+    return (
+        <div className={`w-64 border text-sm border-gray-800 bg-black shadow-sm absolute top-[-120px] left-0 rounded-3xl py-4 flex flex-col select-none transition-all duration-300 ${!isOpen ? 'opacity-0' : 'opacity-100'}`}>
+            <a className='w-100 px-4 py-2 font-bold text-gray-200 hover:bg-gray-800 transition' href="/#">Add an existing account</a>
+            <a className='w-100 px-4 py-2 font-bold text-gray-200 hover:bg-gray-800 transition' href="/#">Log out @hakannyucel</a>
         </div>
     )
 }
