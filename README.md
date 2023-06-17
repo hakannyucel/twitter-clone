@@ -28,16 +28,20 @@ Screen 2
 
 Mobile Screens:
 
-<div style="display: flex; justify-content: space-between"> 
-    <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" height="400" />
-    <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" height="400" />
-    <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" height="400" />
+<div style="display:flex; justify-content:space-between;">
+  <img src="http://twitter-clone.hakanyucel.com/github/Screen3.png" alt="Image 1" style="margin:0 10px;">
+  <img src="http://twitter-clone.hakanyucel.com/github/Screen4.png" alt="Image 2" style="margin:0 10px;">
+  <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" alt="Image 3" style="margin:0 10px;">
 </div>
 
 Demo 1
 
-<p align="center"><img src="http://twitter-clone.hakanyucel.com/github/Video1.gif" width="830" /></p>
+<div style="text-align:center">
+  <img src="http://twitter-clone.hakanyucel.com/github/Video1.gif" alt="Example GIF" style="display:block; margin:0 auto;" width="830">
+</div>
 
 Demo 2
 
-<p align="center"><img src="http://twitter-clone.hakanyucel.com/github/Video3.gif" height="400" /></p>
+<div style="text-align:center">
+  <img src="http://twitter-clone.hakanyucel.com/github/Video2.gif" alt="Example GIF" style="display:block; margin:0 auto;" height="400">
+</div>
