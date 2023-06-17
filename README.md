@@ -26,22 +26,18 @@ Screen 2
 
 <div style="display: block; text-align:center"><img src="http://twitter-clone.hakanyucel.com/github/Screen2.png" /></div>
 
-Screen 3
+Mobile Screens:
 
-<div style="display: block; text-align:center"><img src="http://twitter-clone.hakanyucel.com/github/Screen3.png" /></div>
-
-Screen 4
-
-<div style="display:block; text-align:center"><img src="http://twitter-clone.hakanyucel.com/github/Screen4.png" /></div>
-
-Screen 5
-
-<div style="display: block; text-align:center"><img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" /></div>
+<div style="display: flex; justify-content: space-between"> 
+    <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" height="400" />
+    <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" height="400" />
+    <img src="http://twitter-clone.hakanyucel.com/github/Screen5.png" height="400" />
+</div>
 
 Demo 1
 
-<div style="display: block; text-align:center"><img src="http://twitter-clone.hakanyucel.com/github/Video1.gif" /></div>
+<p align="center"><img src="http://twitter-clone.hakanyucel.com/github/Video1.gif" width="830" /></p>
 
 Demo 2
 
-<div style=" display: block; text-align:center"><img src="http://twitter-clone.hakanyucel.com/github/Video2.gif" /></div>
+<p align="center"><img src="http://twitter-clone.hakanyucel.com/github/Video3.gif" height="400" /></p>
